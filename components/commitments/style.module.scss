@@ -86,7 +86,7 @@
           background-color: transparent;
           border: none;
           position: relative;
-          width: 18rem;
+          width:20rem;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -128,7 +128,7 @@
           }
   
           &:hover::before {
-            clip-path: inset(0 calc(100% - 18rem) 0 0 round 2.5rem);
+            clip-path: inset(0 calc(100% - 19rem) 0 0 round 2.5rem);
             transform: rotate(0deg);
           }
         }
