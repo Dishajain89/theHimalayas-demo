@@ -1,0 +1,63 @@
+.section {
+    position: relative;
+    background:url('/assets/images/bg-image.png') center/cover no-repeat;
+    clip-path: path("M 150 0 Q 0 0 0 150 L 0 1000 L 1003 1000 L 2400 195 Q 701 71 150 0 Z");
+    color: white;
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+   
+
+  
+    @media (min-width: 768px) {
+      padding: 5rem 6rem;
+    }
+  }
+  
+  .contentBox {
+    max-width: 600px;
+    background: rgba(0, 0, 255, 0.15); // optional inner bg
+    padding: 2rem;
+    border-radius: 20px;
+  
+    h2 {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  .ctaButton {
+    background: #0c8aff;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 8px 16px rgba(28, 138, 255, 0.3);
+    cursor: pointer;
+    transition: 0.3s ease;
+  
+    &:hover {
+      background: #0775dd;
+    }
+  
+    .plusIcon {
+      font-size: 1.5rem;
+    }
+  }
+  

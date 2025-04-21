@@ -1,0 +1,93 @@
+.statsSection {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5rem 2rem;
+    background-color: white;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .statBlock {
+    max-width: 280px;
+    position: relative;
+    z-index: 2;
+  
+    h2 {
+      font-size: 3.5rem;
+      color: #12006d;
+      font-weight: 900;
+      margin: 1rem 0 0.5rem;
+    }
+  
+    h4 {
+      font-size: 0.95rem;
+      color: #12006d;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.8rem;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #393e83;
+      line-height: 1.5;
+    }
+  }
+  
+  .iconWrapper {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  
+    img {
+      z-index: 2;
+    }
+  }
+  
+  // Glows
+  .orangeGlow::before,
+  .blueGlow::before,
+  .purpleGlow::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: red;
+    border-radius: 50%;
+    filter: blur(30px);
+    z-index: 1;
+  }
+  
+  .orangeGlow::before {
+    background: rgba(255, 94, 0, 0.3);
+  }
+  .blueGlow::before {
+    background: rgba(0, 200, 255, 0.25);
+  }
+  .purpleGlow::before {
+    background: rgba(100, 0, 255, 0.25);
+  }
+  
+  .connectorLine {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    z-index: 1;
+    pointer-events: none;
+
+
+    @media (max-width: 968px){
+        display: none;
+    }
+  }
+  

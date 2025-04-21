@@ -1,0 +1,222 @@
+@import "../../public/styles/variables";
+.commitments {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    height: 100vh;
+  
+    .leftSection {
+      width: 50%;
+      position: relative;
+      padding: 2rem;
+  
+      .img1 {
+        box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.75);
+        width: 30rem;
+        height: 40rem;
+        position: relative;
+        top: -4rem;
+        left: 3rem;
+        z-index: 1;
+        background-color: #fff;
+        transform: rotate(-5deg);
+  
+        img {
+          width: 100%;
+          height: 100%;
+          padding: 2rem;
+          object-fit: cover;
+        }
+      }
+  
+      .img2 {
+        position: absolute;
+        right: 0;
+        top: 23rem;
+        width: 20rem;
+        height: 20rem;
+        box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.75);
+        background-color: #fff;
+        z-index: 2;
+        transform: rotate(5deg);
+  
+        img {
+          width: 100%;
+          height: 100%;
+          padding: 1.8rem;
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .rightSection {
+      width: 50%;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      p {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        color: navy;
+        font-weight: 600;
+        line-height: 2.9rem;
+        font-style: italic;
+        text-align: center;
+      }
+  
+      .btnWrapper {
+        position: relative;
+        top: 3rem;
+        left: auto;
+        border: none;
+        background-color: none;
+  
+        .scrollBtn {
+          padding: 0.8rem;
+          color: navy;
+          font-weight: bold;
+          border-radius: 8px;
+          font-family: $primary-font;
+          font-size: 1.2rem;
+          letter-spacing: 0.1rem;
+          text-transform: capitalize;
+          background-color: transparent;
+          border: none;
+          position: relative;
+          width: 18rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          z-index: 1;
+  
+          svg {
+            font-size: 1.3rem;
+            padding: 0.2rem;
+            transition: fill 0.7s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            border-radius: 5px;
+            background-color: #053f75;
+            color: white;
+            clip-path: polygon(
+              30% 0%,
+              70% 0%,
+              100% 20%,
+              100% 80%,
+              70% 100%,
+              30% 100%,
+              0% 80%,
+              0% 20%
+            );
+          }
+  
+          &::before {
+            background-color: #8fc9ff;
+            bottom: 0;
+            clip-path: inset(0 calc(100% - 6rem) 0 0 round 2.5rem);
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: rotate(-10deg);
+            transform-origin: 3rem 50%;
+            transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+            z-index: -1;
+          }
+  
+          &:hover::before {
+            clip-path: inset(0 calc(100% - 18rem) 0 0 round 2.5rem);
+            transform: rotate(0deg);
+          }
+        }
+      }
+    }
+  
+    // 🔽 Responsive Styles Start Here
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      height: auto;
+  
+      .leftSection,
+      .rightSection {
+        width: 100%;
+      }
+  
+      .leftSection {
+        .img1 {
+          width: 24rem;
+          height: 32rem;
+          margin: 0 auto;
+        }
+  
+        .img2 {
+          display: none; // hide second image on tablet
+        }
+      }
+  
+      .rightSection {
+        p {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+        }
+  
+        .btnWrapper {
+          top: 2rem;
+          left: 0;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .leftSection {
+        .img1 {
+          width: 20rem;
+          height: 28rem;
+          left: 0;
+        }
+      }
+  
+      .rightSection {
+        p {
+          font-size: 1.6rem;
+          line-height: 2.3rem;
+          padding: 0 1rem;
+        }
+  
+        .scrollBtn {
+          width: 100%;
+          font-size: 1rem;
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .leftSection {
+        .img1 {
+          width: 18rem;
+          height: 24rem;
+          left: 0;
+        }
+      }
+  
+      .rightSection {
+        p {
+          font-size: 1.4rem;
+          line-height: 2rem;
+        }
+  
+        .scrollBtn {
+          font-size: 0.95rem;
+          gap: 0.4rem;
+  
+          svg {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
