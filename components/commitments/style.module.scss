@@ -73,6 +73,7 @@
         left: auto;
         border: none;
         background-color: none;
+        cursor: pointer;
   
         .scrollBtn {
           padding: 0.8rem;
@@ -199,6 +200,7 @@
           width: 18rem;
           height: 24rem;
           left: 0;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
         }
       }
   

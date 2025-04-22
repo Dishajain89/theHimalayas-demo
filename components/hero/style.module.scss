@@ -158,6 +158,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     transition: transform 0.4s ease-out;
     pointer-events: auto;
+    will-change: transform;
 
     img {
       width: 100%;
@@ -173,8 +174,13 @@
   }
 
   @media (max-width: 455px) {
+    height: 180vh;
     .heading {
       left: 0;
+
+      h1{
+        padding: 2rem 0;
+      }
     }
   }
 }

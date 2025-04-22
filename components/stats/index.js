@@ -1,4 +1,7 @@
 import styles from './style.module.scss';
+import { GiCastle } from "react-icons/gi";
+import { FaHouseChimney } from 'react-icons/fa6';
+import { PiPersonSimpleHikeBold } from "react-icons/pi";
 import Image from 'next/image';
 
 export default function StatsSection() {
@@ -6,7 +9,8 @@ export default function StatsSection() {
     <section className={styles.statsSection}>
       <div className={styles.statBlock}>
         <div className={`${styles.iconWrapper} ${styles.orangeGlow}`}>
-          <Image src="/assets/images/hike1.png" alt="Hike Icon" width={70} height={70} />
+        <PiPersonSimpleHikeBold />
+          {/* <Image src="/assets/images/hike1.png" alt="Hike Icon" width={70} height={70} /> */}
         </div>
         <h2>70</h2>
         <h4>KILOMETRES OF SHORELINE</h4>
@@ -15,7 +19,8 @@ export default function StatsSection() {
 
       <div className={styles.statBlock}>
         <div className={`${styles.iconWrapper} ${styles.blueGlow}`}>
-          <Image src="/assets/images/castle1.png" alt="Castle Icon" width={70} height={70} />
+          {/* <Image src="/assets/images/castle1.png" alt="Castle Icon" width={70} height={70} /> */}
+          <GiCastle />
         </div>
         <h2>1,150</h2>
         <h4>KILOMETRES OF SIGNED TRAILS</h4>
@@ -24,7 +29,8 @@ export default function StatsSection() {
 
       <div className={styles.statBlock}>
         <div className={`${styles.iconWrapper} ${styles.purpleGlow}`}>
-          <Image src="/assets/images/hut1.png" alt="Hut Icon" width={70} height={70} />
+        <FaHouseChimney />
+          {/* <Image src="/assets/images/hut1.png" alt="Hut Icon" width={70} height={70} /> */}
         </div>
         <h2>100+</h2>
         <h4>ACCOMMODATION OPTIONS</h4>
