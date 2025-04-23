@@ -28,24 +28,14 @@
 
       
     .logo {
-        color: black;
-        font-weight: bold;
-        text-align: center;
-        font-size: 1.1rem;
-        line-height: 1.4;
-        background-color: white;
-        clip-path: polygon(
-          30% 0%,   /* top left curve */
-          70% 0%,   /* top right curve */
-          100% 20%, /* upper right */
-          100% 80%, /* lower right */
-          70% 100%, /* bottom right curve */
-          30% 100%, /* bottom left curve */
-          0% 80%,   /* lower left */
-          0% 20%    /* upper left */
-        );
-        border-radius: 30px; // optional to smooth the corners
-        padding: 0.6rem;
+        width: 16vw;
+        height: 20vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
   
@@ -168,19 +158,43 @@
     }
   }
   
+
+
+  @media screen and (max-width: 1160px) {
+    .footer {
+      .leftSection{
+        .logo{
+          width: 40vw;
+          height: 14vh;
+        }
+      }
+    }
+  }
   @media screen and (max-width: 768px) {
     .footer {
       flex-direction: column;
+
+      .leftSection{
+        .logo{
+          width: 40vw;
+          height: 14vh;
+        }
+      }
     }
   }
 
   @media (max-width:430px){
     .footer{
       .leftSection{
-        padding: 2rem;
+        padding: 2rem 1rem;
+
+        .logo{
+          width: 60vw;
+          height: 14vh;
+        }
       }
       .rightSection{
-        padding: 2rem;
+        padding: 2rem 1rem;
       }
     }
    

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +50,14 @@ export default function Navbar() {
         ) : (
           <>
             <div className={styles.hamMenu}>
-            <div className={styles.logo}>Into<br />the<br />Himalayas</div>
+              <div className={styles.logo}>
+                <Image
+                  src="/assets/images/logo himalaya.png"
+                  width="200"
+                  height="200"
+                  alt="logo"
+                />
+              </div>
 
               <button
                 className={styles.menuButton}

@@ -1,5 +1,6 @@
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import styles from "./style.module.scss";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -7,10 +8,18 @@ const Footer = () => {
       <footer className={styles.footer}>
         <div className={styles.leftSection}>
           <div className={styles.logoBox}>
-            <div className={styles.logo}>Into<br />the<br />Himalayas</div>
+            <div className={styles.logo}>
+              <Image
+                src="/assets/images/logo himalaya.png"
+                width="300"
+                height="300"
+                alt="logo"
+              />
+            </div>
             <p>
               <strong>Subscribe to our newsletter</strong> to receive tips and
-              insights about travel destinations, nature, and adventure experiences.
+              insights about travel destinations, nature, and adventure
+              experiences.
             </p>
           </div>
 
@@ -36,9 +45,15 @@ const Footer = () => {
           </div>
 
           <div className={styles.socialIcons}>
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaLinkedinIn />
+            </a>
           </div>
 
           <div className={styles.links}>
@@ -53,7 +68,10 @@ const Footer = () => {
       <div className={styles.bottomFooter}>
         <p>© 2025 Into the Himalayas. All rights reserved.</p>
         <p>
-          Developed by <a href="/" target="_blank" rel="noopener noreferrer">DishaJ</a>
+          Developed by{" "}
+          <a href="/" target="_blank" rel="noopener noreferrer">
+            DishaJ
+          </a>
         </p>
       </div>
     </>
