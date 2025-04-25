@@ -68,7 +68,7 @@ const Footer = () => {
       <div className={styles.bottomFooter}>
         <p>© 2025 Into the Himalayas. All rights reserved.</p>
         <p>
-          Developed by{" "}
+          Developed by
           <a href="/" target="_blank" rel="noopener noreferrer">
             DishaJ
           </a>

@@ -10,7 +10,6 @@ export default function LeftBar() {
       <div className={styles.logo}>
       <Image src="/assets/images/logo himalaya.png" width="200" height="200" alt="logo" />
       </div>
-      {/* <div className={styles.logo}>Into<br />the<br />Himalayas</div> */}
       <div className={styles.socials}>
         <a href="#"><FaFacebookF /></a>
         <a href="#"><FaInstagram /></a>

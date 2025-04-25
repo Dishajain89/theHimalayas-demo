@@ -10,26 +10,31 @@ const places = [
     name: "Nainital",
     image: "/assets/images/nainital.jpg",
     description: "Peaceful lakes and pine forests in a charming hill town.",
+    link:"https://en.wikipedia.org/wiki/Nainital"
   },
   {
     name: "Auli",
     image: "/assets/images/auli.jpg",
     description: "Snowy slopes and stunning Himalayan views — ski paradise.",
+    link: "https://en.wikipedia.org/wiki/Auli,_India"
   },
   {
     name: "Binsar",
     image: "/assets/images/binsar.jpg",
     description: "Quiet forest retreat known for nature, wildlife, and stars.",
+    link:"https://en.wikipedia.org/wiki/Binsar_Wildlife_Sanctuary"
   },
   {
     name: "Rishikesh",
     image: "/assets/images/rishikesh.jpg",
     description: "Yoga capital of the world on the banks of the sacred Ganga.",
+    link:"https://en.wikipedia.org/wiki/Rishikesh",
   },
   {
     name: "Mussoorie",
     image: "/assets/images/mussoorie.jpg",
     description: "Charming hill station with colonial vibes and scenic views.",
+    link:"https://en.wikipedia.org/wiki/Mussoorie",
   },
 ];
 
@@ -118,7 +123,9 @@ export default function HeroScrollSection() {
               zIndex: places.length - i, // highest on top
             }}
           >
+            <Link href={place.link} target="_blank" > 
             <img src={place.image} alt={place.name} />
+            </Link>
             <div className={styles.content}>
               <h3>{place.name}</h3>
               <p>{place.description}</p>

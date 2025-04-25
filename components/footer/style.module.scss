@@ -199,6 +199,18 @@
     }
    
   }
+
+
+  @media (max-width:360px){
+    .footer{
+      .leftSection{
+        .logo{
+          height: 12vh;
+        }
+      }
+    }
+
+  }
   
 
   .bottomFooter {
